@@ -1,3 +1,3 @@
 export function settings(){
-    return (<></>)
+    return (<><div>setting</div></>)
 }
