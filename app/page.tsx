@@ -40,7 +40,7 @@ export default function Home() {
 
           <a
             href="https://vercel.com/"
-            className="group rounded-lg border border-transparent flex items-center px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            className="group rounded-lg border border-transparent flex items-center px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 animate-marquee"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -61,20 +61,7 @@ export default function Home() {
               </p>
             </div>
           </a>
-          /*<div
-            key={client.id}
-            className="bg-white w-64 rounded-xl shadow-lg m-4 p-6 flex items-center"
-          >
 
-          <img
-              src={client.logo}
-              alt={`${client.name} Logo`}
-              className="w-12 h-12 mr-4"
-            />
-
-          <p className="text-lg font-semibold">{client.name}</p>
-
-          </div> */
         ))}
       </div>
     </main>
