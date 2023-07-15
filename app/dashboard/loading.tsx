@@ -1,6 +1,6 @@
-import { LoadingSkeleton } from "@/components/loadingSkeleton";
+import { LoadingSkeleton } from "@/components/skeletons/loadingSkeleton";
 
 export default function Loading() {
-    // You can add any UI inside Loading, including a Skeleton.
-    return <LoadingSkeleton />
-  }
+  // You can add any UI inside Loading, including a Skeleton.
+  return <LoadingSkeleton />
+}

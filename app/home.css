@@ -1,0 +1,68 @@
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+.animate-marquee {
+    animation: marquee 30s linear infinite;
+
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+.hide-left {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    overflow: hidden;
+    padding: 10px;
+    /* Adjust the padding as needed */
+    width: 40px;
+    /* Adjust the width as needed */
+    height: 100%;
+    z-index: 9999;
+    background: linear-gradient(90deg, black, transparent);
+}
+
+.hide-right {
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    overflow: hidden;
+    padding: 10px;
+    /* Adjust the padding as needed */
+    width: 60px;
+    /* Adjust the width as needed */
+    height: 100%;
+    z-index: 9999;
+    background: linear-gradient(90deg, transparent, black);
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 400px) {
+    .animate-marquee {
+        animation: marquee 10s linear infinite;
+
+    }
+}

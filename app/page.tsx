@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import './home.css'
 
 export default function Home() {
   const clients = [
@@ -27,20 +28,21 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed right-0 top-0 flex items-center justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          400 clientes ativos
+          900 apps automatizados
         </p>
-        <div className="fixed left-0 top-0 flex items-center justify-center border-r border-gray-300 bg-gradient-to-r from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+        <a href='/login' className="fixed left-0 top-0 flex items-center justify-center border-r border-gray-300 bg-gradient-to-r from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           <h2 className="text-2xl font-semibold">Monitorar</h2>
-        </div>
+        </a>
       </div>
 
-      <div className="flex flex-wrap justify-center mt-12">
+      <div className="hide-left"></div>
+      <div className="flex flex-wrap justify-center mt-12 animate-marquee">
         {clients.map((client) => (
 
 
           <a
             href="https://vercel.com/"
-            className="group rounded-lg border border-transparent flex items-center px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 animate-marquee"
+            className="group rounded-lg border border-transparent flex items-center px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 "
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -64,6 +66,7 @@ export default function Home() {
 
         ))}
       </div>
+      <div className="hide-right"></div>
     </main>
   )
 }
