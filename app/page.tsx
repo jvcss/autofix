@@ -35,6 +35,7 @@ export default function Home() {
         </a>
       </div>
 
+      <div className="hide-left"></div>
       <div className="flex flex-wrap justify-center mt-12 animate-marquee">
         {clients.map((client) => (
 
@@ -65,6 +66,7 @@ export default function Home() {
 
         ))}
       </div>
+      <div className="hide-right"></div>
     </main>
   )
 }
