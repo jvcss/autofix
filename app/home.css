@@ -1,0 +1,41 @@
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+.animate-marquee {
+    animation: marquee 30s linear infinite;
+
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* New styles for fading out the corners */
+.animate-marquee {
+    position: relative;
+    overflow: hidden;
+   /* padding: 10px;  Adjust the padding as needed */
+}
+
