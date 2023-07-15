@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ts" : "ts-node tests\\prisma\\read.mjs",
+    "migrate": "npx prisma migrate dev --name init",
+    "uidb": "npx prisma studio"
   },
   "dependencies": {
+    "@prisma/client": "5.0.0",
     "@types/node": "20.4.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.7",
@@ -21,5 +25,11 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0"
+  },
+  "package": {
+    "type": "module"
   }
 }
